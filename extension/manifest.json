@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Detox Digital",
+  "version": "1.0.0",
+  "description": "Detecta procrastinação e ajuda você a manter o foco.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms",
+    "notifications"
+  ],
+  "host_permissions": [
+    "http://localhost:3000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Detox Digital"
+  }
+}
