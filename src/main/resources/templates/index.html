@@ -1,44 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detox Digital</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+<head th:replace="~{fragments/head :: head('Detox Digital')}"></head>
 <body class="bg-dark text-white">
-    <div class="container text-center py-5">
-        <h1 class="display-3 fw-bold mb-3">Detox Digital</h1>
-        <p class="lead mb-4">Pare de procrastinar. Volte ao foco.</p>
-        <div class="row justify-content-center g-4 mt-3">
-            <div class="col-md-4">
-                <div class="card bg-secondary text-white h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Dashboard</h5>
-                        <p class="card-text">Veja suas estatísticas de procrastinação hoje e na semana.</p>
-                        <a href="/dashboard" class="btn btn-light">Acessar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card bg-secondary text-white h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Gerenciar Sites</h5>
-                        <p class="card-text">Configure quais sites são distractivos e seus limites de tempo.</p>
-                        <a href="/sites" class="btn btn-light">Gerenciar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card bg-secondary text-white h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Extensão Chrome</h5>
-                        <p class="card-text">Instale a extensão para monitoramento automático.</p>
-                        <a href="#" class="btn btn-outline-light disabled">Em breve</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<nav th:replace="~{fragments/navbar :: navbar('')}"></nav>
+<div class="container text-center py-5">
+  <h1 class="display-3 fw-bold mb-3">Detox Digital</h1>
+  <p class="lead mb-4">Pare de procrastinar. Volte ao foco.</p>
+  <div class="row justify-content-center g-4 mt-3">
+    <div class="col-md-4">
+      <div class="card bg-secondary text-white h-100"><div class="card-body">
+        <h5 class="card-title">Dashboard</h5>
+        <p class="card-text">Veja suas estatisticas de procrastinacao hoje e na semana.</p>
+        <a href="/dashboard" class="btn btn-light">Acessar</a>
+      </div></div>
     </div>
+    <div class="col-md-4">
+      <div class="card bg-secondary text-white h-100"><div class="card-body">
+        <h5 class="card-title">Gerenciar Sites</h5>
+        <p class="card-text">Configure quais sites sao distrativos e seus limites de tempo.</p>
+        <a href="/sites" class="btn btn-light">Gerenciar</a>
+      </div></div>
+    </div>
+    <div class="col-md-4">
+      <div class="card bg-secondary text-white h-100"><div class="card-body">
+        <h5 class="card-title">Extensao Chrome</h5>
+        <p class="card-text">Instale a extensao para monitoramento automatico.</p>
+        <a href="#" class="btn btn-outline-light disabled">Em breve</a>
+      </div></div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
