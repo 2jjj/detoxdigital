@@ -74,4 +74,4 @@ O servidor inicia na porta **3000**. Acesse:
 
 ## Licenca
 
-MIT
+MIT License
